@@ -35,7 +35,7 @@ AI-Speech-Recognition/
 ## Screenshots
 
 ### Application Interface
-![Application Interface](<screenshots/Screenshot 2025-12-21 012540.png>)
+![Application Interface](<screenshots/Screenshot 2025-12-21 012540 copy.png>)
 
 ### Audio Upload
 ![Audio Upload](<screenshots/Screenshot 2025-12-21 012559.png>)
