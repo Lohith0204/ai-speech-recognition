@@ -1,0 +1,12 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Audio / large media files
+*.mp3
+*.wav
+*.m4a
+
+# System files
+.DS_Store
+Thumbs.db
