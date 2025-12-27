@@ -1,26 +1,15 @@
 import streamlit as st
 import tempfile
-from ai_engine.model import transcribe_audio, summarize_text
+from ai_engine.model import transcribe_audio
 
-st.title("AI Video / Audio Summarizer")
+st.title("AI Speech Recognition")
 
-uploaded_file = st.file_uploader(
-    "Upload an audio file extracted from video",
-    type=["wav", "mp3", "m4a"]
-)
+audio_file = st.file_uploader("Upload an audio file", type=["wav", "mp3"])
 
-if uploaded_file is not None:
-    st.audio(uploaded_file)
+if audio_file is not None:
+    with tempfile.NamedTemporaryFile(delete=False) as temp_audio:
+        temp_audio.write(audio_file.read())
+        text = transcribe_audio(temp_audio.name)
 
-    if st.button("Generate Summary"):
-        with st.spinner("Processing..."):
-            with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as temp_audio:
-                temp_audio.write(uploaded_file.read())
-                temp_audio_path = temp_audio.name
-
-            transcription = transcribe_audio(temp_audio_path)
-            summary = summarize_text(transcription)
-
-        st.success("Summary generated")
-        st.subheader("Summary")
-        st.write(summary)
+    st.subheader("Transcribed Text")
+    st.write(text)

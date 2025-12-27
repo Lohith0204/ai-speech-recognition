@@ -1,5 +1,9 @@
 # AI Speech Recognition App
 
+## Live Demo
+Try out the deployed application here:
+🚀 Streamlit App → (Add your Streamlit URL here once deployed)
+
 ## Overview
 This project is a simple AI-based speech-to-text application that converts spoken audio into written text using the Whisper model. The application provides an easy-to-use web interface where users can upload an audio file and receive the corresponding transcription.
 
@@ -14,6 +18,8 @@ This project is a simple AI-based speech-to-text application that converts spoke
 - Whisper / Faster-Whisper  
 
 ## Project Structure
+
+```text
 AI-Speech-Recognition/
 │
 ├── app.py # Streamlit UI and application logic
@@ -30,7 +36,7 @@ AI-Speech-Recognition/
     ├── home.png
     ├── upload.png
     └── result.png
-
+```
 
 ## Screenshots
 
