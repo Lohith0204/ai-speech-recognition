@@ -2,7 +2,7 @@
 
 ## Live Demo
 Try out the deployed application here:
-🚀 Streamlit App → (Add your Streamlit URL here once deployed)
+🚀 **Streamlit App** → https://ai-speech-recognition-s2mzgtrvpnhos2bvgakyda.streamlit.app/
 
 ## Overview
 This project is a simple AI-based speech-to-text application that converts spoken audio into written text using the Whisper model. The application provides an easy-to-use web interface where users can upload an audio file and receive the corresponding transcription.
